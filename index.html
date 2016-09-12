@@ -154,9 +154,11 @@ $(document).ready(function() {
 </div>
 <div class="section section1">
     <div class="section1-img">
-        <div class="img">
+        <a title="立即查看" href="">
+            <div class="img">
 
-        </div>
+            </div>
+        </a>
         <div class="img1">
 
         </div>
@@ -308,5 +310,33 @@ $(document).ready(function() {
         <li><a class="qq" href="http://wpa.qq.com/msgrd?v=3&amp;uin=754626052&amp;site=qq&amp;menu=yes" target="_blank" title="QQ咨询"></a></li>
     </ul>
 </div>
+<div class="twocode">
+    <div class="yidong">
+        <p class="erwei"><img src="images/icon-wechat.png" height="50" width="50" alt=""></p>
+        <p class="rw3">
+            <br>
+            微信二维码
+            <img src="images/wechat.jpg" width="100" alt="">
+            <br>
+            客户端下载
+            <img src="images/wechat.jpg" width="100" alt="">
+        </p>
+    </div>
+</div>
 </body>
+<script>
+$(document).ready(function(){
+
+  $('.twocode .yidong').hover(function(){
+
+    $(this).find('.rw3').stop().animate({
+      'width':'132px'
+    },400);
+  },function(){
+    $(this).find('.rw3').stop().animate({
+      'width':'0px'
+    },400);
+    });
+});
+</script>
 </html>

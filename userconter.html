@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/abotu.css">
+<link rel="stylesheet" href="css/input.css">
 </head>
 <script src="js/jquery-1.8.3.min.js"></script>
 <body>
@@ -40,11 +41,13 @@
         <div class="sub-nav l-left">
             <h2>会员中心</h2>
             <ul>
-                <li><a class="active" href="">我的订单</a></li>
+                <li><a class="active" href="userconter.html">个人中心</a></li>
+                <li><a href="u-orderList.html">我的订单</a></li>
                 <li><a href="">设备管理</a></li>
                 <li><a href="">我的家庭圈</a></li>
-                <li><a href="u-message.html">留言提问</a></li>
-                <li><a href="u-complaint.html">投诉与建议</a></li>
+                <li><a href="u-userAdd.html">我的地址</a></li>
+                <li><a href="">我的家庭圈</a></li>
+                <li><a href="u-message.html">我的留言</a></li>
             </ul>
         </div>
         <div class="userconter-box l-right">
@@ -58,7 +61,7 @@
                 </td>
                 <td width="300" height="28">黄聪聪</td>
                 <td width="300">资料认证：已认证</td>
-                <td width="234"><a href="">[修改信息]</a></td>
+                <td width="234"><a href="u-editInfo.html">[修改信息]</a></td>
               </tr>
               <tr>
                 <td height="28">身份：普通会员</td>
@@ -75,38 +78,41 @@
                 <h3 class="title">
                     最近交易：
                 </h3>
-                <table width="955" class="list-table">
-                      <tr>
-                        <th width="130" height="38" scope="col">单号</th>
-                        <th width="235" scope="col">产品名称</th>
-                        <th width="90" scope="col">价格（元）</th>
-                        <th width="90" scope="col">数量</th>
-                        <th width="90" scope="col">运费</th>
-                        <th width="110" scope="col">总付款（元）</th>
-                        <th width="90" scope="col">状态</th>
-                        <th width="90" scope="col">操作</th>
-                      </tr>
-                      <tr>
-                        <th height="38" scope="row">25468123655</th>
-                        <td>25468123655陈情表专为老人设计</td>
-                        <td>1280.00</td>
-                        <td>1</td>
-                        <td>10.00</td>
-                        <td>1290.00</td>
-                        <td>已付款</td>
-                        <td><a class="lan" href="">[删除]</a></td>
-                      </tr>
-                      <tr>
-                        <th height="38" scope="row">25468123655</th>
-                        <td>25468123655陈情表专为老人设计</td>
-                        <td>1280.00</td>
-                        <td>1</td>
-                        <td>10.00</td>
-                        <td>1290.00</td>
-                        <td class="lan">未付款</td>
-                        <td><a class="lan" href="">[付款]</a></td>
-                      </tr>
-                </table>
+                <div class="form-group">
+                    <table width="955" class="table01">
+                          <tr>
+                            <th width="130" height="38" scope="col">单号</th>
+                            <th width="235" scope="col">产品名称</th>
+                            <th width="90" scope="col">价格（元）</th>
+                            <th width="90" scope="col">数量</th>
+                            <th width="90" scope="col">运费</th>
+                            <th width="110" scope="col">总付款（元）</th>
+                            <th width="90" scope="col">状态</th>
+                            <th width="90" scope="col">操作</th>
+                          </tr>
+                          <tr>
+                            <th height="38" scope="row">25468123655</th>
+                            <td>25468123655陈情表专为老人设计</td>
+                            <td>1280.00</td>
+                            <td>1</td>
+                            <td>10.00</td>
+                            <td>1290.00</td>
+                            <td>已付款</td>
+                            <td><a class="lan" href="">[删除]</a></td>
+                          </tr>
+                          <tr>
+                            <th height="38" scope="row">25468123655</th>
+                            <td>25468123655陈情表专为老人设计</td>
+                            <td>1280.00</td>
+                            <td>1</td>
+                            <td>10.00</td>
+                            <td>1290.00</td>
+                            <td class="lan">未付款</td>
+                            <td><a class="lan" href="">[付款]</a></td>
+                          </tr>
+                    </table>
+                </div>
+
             </div>
         </div>
     </div>

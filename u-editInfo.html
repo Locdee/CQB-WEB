@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/abotu.css">
+<link rel="stylesheet" type="text/css" href="css/input.css">
 </head>
 <script src="js/jquery-1.8.3.min.js"></script>
 <body>
@@ -32,7 +33,7 @@
 </div>
 <div id="web-map" class="">
     <div class="main">
-        <p class="title">当前位置：<a href="">会员中心&nbsp</a>>&nbsp我的订单</p>
+        <p class="title">当前位置：<a href="">会员中心&nbsp</a>>&nbsp修改个人信息</p>
     </div>
 </div>
 <div id="container">
@@ -51,32 +52,64 @@
         <div class="userconter-box l-right">
             <div class="userconter-list">
                 <h3 class="title">
-                    投诉与建议：
+                    我的地址：
                 </h3>
-                <table width="955" id="message">
-                  <tr>
-                    <td width="50%" height="38" scope="row">
-                        <div class="userimg l-float">
-                            <img class="l-left" src="word/user-img.jpg" height="40" width="40" alt="">
-                            <p>张伟伟：<br><em>6分钟前</em></p>
-                        </div>
-                        <p class="title1">助人光荣榜又出新玩法，每周推出一个分类进行排名奖励</p>
-                    </td>
-                    <td width="50%" rowspan="2" valign="top" style="padding-left: 20px;">
-                        <textarea name="message" rows="4" id="message-input" class="message-input" placeholder="投诉与建议"></textarea>
-                        <a class="message-btn" href="">立即发表</a>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td width="50%">
-                          <div class="userimg l-float">
-                            <img class="l-left" src="word/shoplist01.png" height="40" width="40" alt="">
-                            <p>管理员回复：<br><em>6分钟前</em></p>
-                        </div>
-                        <p class="title1">是啊，而且还特别好玩！</p>
-                      </td>
-                  </tr>
-            </table>
+                <div class="form-horizontal border">
+                  <div class="form-group">
+                    <label class="control-label">昵称</label>
+                    <div class="w400">
+                      <input type="text" class="form-control" placeholder="名称" value="卓商甜品"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">地址</label>
+                    <div class="w600">
+                      <div class="w110">
+                        <select class="form-control">
+                          <option>广东省</option>
+                          <option>广西省</option>
+                          <option>福建省</option>
+                        </select>
+                      </div>
+                      <div class="w110">
+                        <select class="form-control">
+                          <option>中山市</option>
+                          <option>广州市</option>
+                          <option>珠海市</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">详细地址</label>
+                    <div class="w400">
+                      <input type="text" class="form-control" placeholder="街道地址" value="中山市火炬开发区会展中心"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">手机电话</label>
+                    <div class="w400">
+                      <input type="text" class="form-control" placeholder="手机电话" value="18923918891"></div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">头像</label>
+                    <div class="w600">
+                      <div class="w110">
+                        <label class="uploadImg">
+                          <input type="file">
+                          <span>上传头像</span>
+                        </label>
+                      </div>
+                      <div class="w110" style="margin-right: 20px;">
+                        <a target="_black" href="../update/word-fu02.png"><img src="../update/word-fu02.png" width="100" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label"></label>
+                    <div class="w400">
+                      <button type="submit" class="btn btn-primary btn-big">保存/更新</button>
+                    </div>
+                  </div>
+                </div>
             </div>
         </div>
     </div>

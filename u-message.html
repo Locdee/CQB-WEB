@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="css/css.css">
 <link rel="stylesheet" href="css/abotu.css">
+<link rel="stylesheet" href="css/input.css">
 </head>
 <script src="js/jquery-1.8.3.min.js"></script>
 <body>
@@ -40,42 +41,51 @@
         <div class="sub-nav l-left">
             <h2>会员中心</h2>
             <ul>
-                <li><a href="userconter.html">我的订单</a></li>
+                <li><a class="active" href="userconter.html">个人中心</a></li>
+                <li><a href="u-orderList.html">我的订单</a></li>
                 <li><a href="">设备管理</a></li>
                 <li><a href="">我的家庭圈</a></li>
-                <li><a class="active"  href="u-message.html">留言提问</a></li>
-                <li><a href="u-complaint.html">投诉与建议</a></li>
+                <li><a href="u-userAdd.html">我的地址</a></li>
+                <li><a href="">我的家庭圈</a></li>
             </ul>
         </div>
         <div class="userconter-box l-right">
             <div class="userconter-list">
-                <h3 class="title">
+                <div class="pd10 l-float" style="text-align:right;padding:10px 0">
+                    <h3 class="title l-left">
                     我的留言：
-                </h3>
-                <table width="955" id="message">
-                  <tr>
-                    <td width="50%" height="38" scope="row">
-                        <div class="userimg l-float">
-                            <img class="l-left" src="word/user-img.jpg" height="40" width="40" alt="">
-                            <p>张伟伟：<br><em>6分钟前</em></p>
-                        </div>
-                        <p class="title1">助人光荣榜又出新玩法，每周推出一个分类进行排名奖励</p>
-                    </td>
-                    <td width="50%" rowspan="2" valign="top" style="padding-left: 20px;">
-                        <textarea name="message" rows="4" id="message-input" class="message-input" placeholder="你的留言内容"></textarea>
-                        <a class="message-btn" href="">发表留言</a>
-                    </td>
-                  </tr>
-                  <tr>
-                      <td width="50%">
-                          <div class="userimg l-float">
-                            <img class="l-left" src="word/shoplist01.png" height="40" width="40" alt="">
-                            <p>管理员回复：<br><em>6分钟前</em></p>
-                        </div>
-                        <p class="title1">是啊，而且还特别好玩！</p>
-                      </td>
-                  </tr>
-            </table>
+                    </h3>
+                    <input type="button" value="我要留言" class="btn btn-success" id="showPopTxt">
+                </div>
+                <table class="table01">
+                    <tr>
+                        <th width="50">序号</th>
+                        <th width="235" height="38" scope="col">留言内容</th>
+                        <th width="90" scope="col">留言时间</th>
+                        <th width="235" scope="col">系统回复</th>
+                        <th width="90" scope="col">回复时间</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>你好烦啊，该留该去</td>
+                        <td class="center">2016-5-26 16:15:02</td>
+                        <td class="center"> 你吹咩
+                        </td>
+                        <td class="center">
+                          2016-5-26 16:15:24
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>你好烦啊，该留该去</td>
+                        <td class="center">2016-5-26 16:15:02</td>
+                        <td class="center"> 你吹咩
+                        </td>
+                        <td class="center">
+                          2016-5-26 16:15:24
+                        </td>
+                    </tr>
+                    </table>
             </div>
         </div>
     </div>
@@ -127,5 +137,43 @@
         <li><a class="qq" href="http://wpa.qq.com/msgrd?v=3&amp;uin=754626052&amp;site=qq&amp;menu=yes" target="_blank" title="QQ咨询"></a></li>
     </ul>
 </div>
+<!-- 弹出窗口代码 -->
+<div class="pop-bg">
+    <div class="pop-cont">
+        <!--title-->
+        <h3>欢迎给我们留言</h3>
+        <!--content-->
+        <div class="pop-cont-input">
+            <ul>
+                <li>
+                    <span class="ttl">留言内容：</span>
+                    <textarea class="textarea" style="height:50px;width:194px;"  placeholder="输入你的留言内容..."></textarea>
+                </li>
+            </ul>
+        </div>
+        <div class="btm-btn">
+            <input type="button" value="提交" class="input-btn trueBtn"/>
+            <input type="button" value="取消" class="input-btn falseBtn"/>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+ $(document).ready(function(){
+ //弹出文本性提示框
+ $("#showPopTxt").click(function(){
+   $(".pop-bg").fadeIn();
+   });
+ //弹出：确认按钮
+ $(".trueBtn").click(function(){
+   alert("你点击了确认！");//测试，可删
+   $(".pop-bg").fadeOut();
+   });
+ //弹出：取消或关闭按钮
+ $(".falseBtn").click(function(){
+   alert("你点击了取消/关闭！");//测试，可删
+   $(".pop-bg").fadeOut();
+   });
+ });
+ </script>
 </html>
